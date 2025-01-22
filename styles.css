@@ -1,0 +1,260 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Container to centralize content and add max-width */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+header .logo img {
+    width: 100px; /* Adjust logo width */
+    height: auto;
+}
+
+
+header .logo h1 {
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9900;
+}
+
+/* Banner Section */
+.banner {
+    background: linear-gradient(45deg, #0073e6, #00bcd4);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background: #ff9900;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #ff6600;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+#services h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1;
+    margin: 15px;
+    padding: 25px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+/* About Us Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+#about h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.team-member {
+    margin: 0 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Contact Us Section */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+#contact h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 12px 25px;
+    background: #0073e6;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background: #005bb5;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer .social a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #ff9900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .service-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+}
+
+
+
