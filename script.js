@@ -1,23 +1,24 @@
-// Smooth Scroll for Navigation Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contact-form");
+    const successMessage = document.getElementById("success-message");
+
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent page refresh
+
+        // Get form values
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        // Simulate form submission (AJAX can be added later)
+        setTimeout(() => {
+            successMessage.style.display = "block";
+            contactForm.reset();
+        }, 1000);
     });
 });
-
-// Basic Form Validation
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    if (name === '' || email === '' || message === '') {
-        alert('Please fill out all fields.');
-        event.preventDefault();
-    }
-});
-
-
