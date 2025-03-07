@@ -256,5 +256,72 @@ footer .social a:hover {
     }
 }
 
+/* Contact Form Section */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button.btn {
+    width: 100%;
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.btn:hover {
+    background: #0056b3;
+}
+
+/* Success Message */
+.success-message {
+    color: green;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: none;
+}
 
 
